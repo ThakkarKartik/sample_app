@@ -1,5 +1,4 @@
 import 'dart:math';
-
 import 'package:flutter/material.dart';
 import 'package:fl_chart/fl_chart.dart';
 
@@ -32,11 +31,11 @@ class ChartDemo extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Bar Chart Demo'),
+          title: const Text('Bar Chart Demo'),
         ),
-        body: Container(
-          padding: EdgeInsets.all(10),
-          width: double.infinity,
+        body: SizedBox(
+          width: 400,
+          height: 300,
           child: BarChart(
             BarChartData(
               groupsSpace: 10,

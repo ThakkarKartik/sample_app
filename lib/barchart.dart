@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:fl_chart/fl_chart.dart';
 
 void main(List<String> args) {
-  runApp(ChartDemo());
+  runApp(const ChartDemo());
 }
 
 class ChartDemo extends StatelessWidget {
@@ -15,10 +15,10 @@ class ChartDemo extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Line Chart Demo'),
+          title: const Text('Line Chart Demo'),
         ),
         body: Container(
-          padding: EdgeInsets.all(10),
+          padding: const EdgeInsets.all(10),
           width: double.infinity,
           child: BarChart(
             BarChartData(barGroups: [
